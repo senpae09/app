@@ -5,8 +5,7 @@ from aiogram import Bot, Dispatcher
 from aiogram.types import Message
 from aiogram.fsm.storage.memory import MemoryStorage
 from aiogram import Router
-
-TOKEN = "7623169097:AAGaKfmSqYbNJSQfhpfJ6JPcB530dL8ML8k"
+from config import TOKEN
 
 # Logger sozlash
 logging.basicConfig(level=logging.INFO)
@@ -37,4 +36,3 @@ if __name__ == '__main__':
     except (KeyboardInterrupt, SystemExit):
         print("Bot to'xtatildi ❌")
 
-dajkdhsdasjd
