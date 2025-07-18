@@ -19,7 +19,7 @@ dp = Dispatcher(storage=storage)
 router = Router()
 dp.include_router(router)
 
-# Oddiy /start komandasi uchun handler
+
 @router.message(lambda msg: msg.text == "/start")
 async def start_handler(message: Message):
     await message.answer(f"Salom, {message.from_user.full_name}! Bot ishga tushdi ✅")
